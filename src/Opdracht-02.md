@@ -96,5 +96,5 @@ while (getal < 0) {
 ```
 </details>
 
-Veel succes! 🚀
+Veel succes! 
 

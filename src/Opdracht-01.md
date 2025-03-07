@@ -19,6 +19,10 @@ In deze opdracht leer je hoe je beslissingen maakt in Java met behulp van `if`, 
     - **Negatief** is → Print: "Het getal is negatief."
     - **Nul** is → Print: "Het getal is nul."
 
+
+<details>
+<summary>Uitwerking</summary>
+
 ### **Codevoorbeeld**
 ```java
 import java.util.Scanner;
@@ -40,6 +44,8 @@ public class Beslissingen {
 }
 ```
 
+</details>
+
 ---
 
 ## **Stap 3: Uitvoeren en testen**
@@ -55,6 +61,40 @@ Breid het programma uit zodat:
 
 ### **Hint**
 Gebruik de **modulus-operator `%`** om te controleren of een getal deelbaar is door 2.
+
+
+<details>
+<summary>Uitwerking</summary> 
+
+```java
+import java.util.Scanner;
+
+public class Beslissingen {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Voer een getal in: ");
+        int getal = scanner.nextInt();
+
+        if (getal > 0) {
+            System.out.println("Het getal is positief.");
+        } else if (getal < 0) {
+            System.out.println("Het getal is negatief.");
+        } else {
+            System.out.println("Het getal is nul.");
+        }
+
+        // Controleer of het getal even of oneven is
+        if (getal % 2 == 0) {
+            System.out.println("Het is een even getal.");
+        } else {
+            System.out.println("Het is een oneven getal.");
+        }
+    }
+}
+
+```
+</details>
+
 
 Veel succes! 
 
